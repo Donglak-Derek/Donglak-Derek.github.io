@@ -126,15 +126,20 @@ nav:hover ul {
 	width: 26%;
 	float: left;
 	margin: 4%;
+	position: relative;
+	top: 100px;
 }
 .one-third-port {
-	width: 29.3333333%;
+	text-align: center;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
 	padding: 2%;
 	float: left;
 }
-.one-third-port img:hover {
+/*.one-third-port img:hover {
 	opacity: .6;
-}
+}*/
 .contact a {
 	color: @2C2C2C;
 	/*text-decoration: none;*/
