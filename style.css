@@ -58,7 +58,7 @@ h1 {
 	/*text-shadow: 0px 0px 250px #000;*/
 }
 .content p {
-	color: #FFF;
+	color: #000;
 }
 .inner {
 	max-width: 600px;
@@ -69,9 +69,13 @@ h1 {
 }
 /*---- start Nav ---*/
 nav {
-	float: left;
+	/*float: left;
 	padding: 5% 5% 0 0;
-	height: 50px;
+	height: 50px;*/
+
+	position: fixed;
+	left: 0;
+
 }
 nav ul {
 	list-style: none;
@@ -82,7 +86,7 @@ nav ul li {
 	font-size: 120%;
 }
 nav ul li a {
-	color: #FFF;
+	color: #000;
 	text-decoration: none;
 }
 nav ul li a:hover {
@@ -133,14 +137,14 @@ nav:hover ul {
 }
 .contact a {
 	color: @2C2C2C;
-	text-decoration: none;
+	/*text-decoration: none;*/
 }
 .contact p {
 	color: @2C2C2C;
 	text-align: center;
 }
 .break {
-	display: none;
+	display: block;
 }
 .clearfix {
 	clear: both;
@@ -161,12 +165,13 @@ nav:hover ul {
 	display: inline;
 }
 .social img {
-	width: 9%;
-	margin: 1% auto;
-	
+	width: 8%;
+	margin: 3% auto;
+	padding: 2%;
 }
 .social img:hover {
-	color: #606060;
+	/*color: #606060;*/
+	opacity: .6;
 }
 footer.second {
 	background-color: #2C2C2C;
@@ -222,7 +227,9 @@ footer.second p {
 		display: none;
 	}
 	.social img {
-		font-size: 170%;
+		font-size: 50%;
+		position: relative;
+		right: 14px;
 	}
 }
 
