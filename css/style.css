@@ -134,15 +134,24 @@ nav:hover ul {
 }
 .one-third-port {
 	text-align: center;
+	width: 29.33333%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2%;
+	float: left;
+}
+.one-port {
+	text-align: center;
 	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 2%;
 	float: left;
 }
-/*.one-third-port img:hover {
+
+.one-third-port img:hover {
 	opacity: .6;
-}*/
+}
 .contact a {
 	color: @2C2C2C;
 	/*text-decoration: none;*/
