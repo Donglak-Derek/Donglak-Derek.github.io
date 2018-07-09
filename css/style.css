@@ -33,14 +33,17 @@ img {
 	height: 100%;
 	width: 100%;
 	margin: auto;
-	background: url(img/derek_square.png) no-repeat 50% 50%;
+	background: url(../img/derek_square.png) no-repeat 50% 50%;
 	background-size: cover;
 	display: table;
 	top: 0;
+
 }
+
 .intro .inner {
 	display: table-cell;
-	vertical-align: bottom;
+	vertical-align: middle;
+
 	width: 100%;
 	max-width: none;
 }
@@ -112,7 +115,7 @@ nav:hover ul {
 #menu-icon {
 	width: 30px;
 	height: 26px;
-	background: url(img/menu-icon.png) center;
+	background: url(../img/menu-icon.png) center;
 	display: inline-block;
 	margin: 50px 0 0 50px;
 }
@@ -156,7 +159,7 @@ nav:hover ul {
 	height: 3%;
 }
 .parallax {
-	background: url(img/derek_name_color.png) repeat fixed 100%;
+	background: url(../img/derek_name_color.png) repeat fixed 100%;
 	opacity: .5;
 }
 .parallax-inner {
