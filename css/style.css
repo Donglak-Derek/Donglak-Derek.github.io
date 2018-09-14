@@ -230,11 +230,12 @@ button {
 	height: 30%;
 }
 .parallax {
-	background: url(../img/derek_name_color.png) repeat fixed 100%;
-	opacity: .5;
+	background: url(https://images.unsplash.com/photo-1503980599186-9cc36eda351a?ixlib=rb-0.3.5&s=35504fdb448d53970d30e1365fe5702e&auto=format&fit=crop&w=1350&q=80) repeat fixed 100%;
+
+	opacity: 1;
 }
 .parallax-inner {
-	padding-top: 17%;
+	padding-top: 20%;
 }
 .social {
 	list-style-type: none;
