@@ -6,51 +6,192 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Derek's Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="shortcut icon" type="image/png" href="img/d-icon.png">
+	<!-- <link rel="shortcut icon" type="image/png" href="img/d-icon.png"> -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
 </head>
-<body>
-	<section class="intro">
-		<nav>
-			<a href="#" id="menu-icon"></a>
-			<ul>
-				<li><a href="#about">About Me</a></li>
-				<li><a href="#port">portfolio</a></li>
-				<li><a href="#contact">Contack me</a></li>
-			</ul>
-		</nav>
-			<div class="inner">
-				<div class="content">
-					<p>Describe myself in 3 words</p>
-					<p>Positive</p>
-					<p>Funny</p>
-					<p>Enthusiastic</p>
-				</div>
+<body>	
+	<div id="links" class="space">
+	  <button class="purple" onclick="window.location.href='#links'">TOP</button>
+	  <button class="orange" onclick="window.location.href='#Portfolio'">Portfolio</button>
+	  <button class="green" onclick="window.location.href='#Contact'">Contact</button>
+	</div>
+	
+	<div id="name" class="intro">
+	  <span class="logo">
+	    <span id="d" class="letter">D</span>
+	    <span id="e" class="letter">E</span>
+	    <span id="r" class="letter">R</span>
+	    <span id="e2" class="letter">E</span>
+	    <span id="k" class="letter">K</span>
+	  </span>
+	  <span class="logo">
+	    <span id="h" class="letter">H</span>
+	    <span id="a" class="letter">A</span>
+	    <span id="n" class="letter">N</span>
+	    <span id="dot" class="letter">.</span>
+	  </span>
+		<p>I really like writing code.</p>
+		<p>Especially in Ruby on Rails and JavaScript.</p>
+	</div>
+
+	<div class="content space">
+		<h1 class="purple">My full stack technology</h1>
+		<div class="devicon">
+			<section>
+				<p class="title">Language :</p>
+					<i class="devicon-python-plain-wordmark colored"></i>
+					<i class="devicon-ruby-plain-wordmark colored"></i>
+					<i class="devicon-javascript-plain colored"></i>
+					<i class="devicon-html5-plain-wordmark colored"></i>
+					<i class="devicon-css3-plain-wordmark colored"></i>
+			</section>
+			<section>
+				<p class="title">Framework :</p>
+					<i class="devicon-angularjs-plain-wordmark colored"></i>
+					<i class="devicon-express-original-wordmark colored"></i>
+					<i class="devicon-django-plain-wordmark colored"></i>
+					<i class="devicon-rails-plain-wordmark colored"></i>
+			</section>
+			<section>
+				<p class="title">Database :</p>
+					<i class="devicon-mysql-plain-wordmark colored"></i>
+					<i class="devicon-postgresql-plain-wordmark colored"></i>
+					<i class="devicon-mongodb-plain-wordmark colored"></i>
+			</section>
+			<section>
+				<p class="title">etc :</p>
+				<i class="devicon-github-plain-wordmark colored"></i>
+				<i class="devicon-jquery-plain-wordmark colored"></i>
+				<i class="devicon-react-original-wordmark colored"></i>
+				<i class="devicon-nodejs-plain-wordmark colored"></i>
+			</section>
+		</div>
+	</div>
+
+
+	<div id="Portfolio" class="content space">
+		<h1 class="orange">My Portfolio</h1>
+
+		<section class="one-third-port">
+			<div class="card purple">
+				<h3>Tic Tag Toe</h3><hr>
+				<p>
+					<i class="devicon-react-original"></i>
+				</p>
+				<p class="red">Tic Tag Toe game</p>
+				<p>
+					<a href="https://github.com/Donglak-Derek/react-tictactoe.git" target="_blank">View Code</a>
+				</p>
+				<p>
+					I tried Tic Tag Toe game with react. It was fun but I need to get a job NOW! 
+				</p>
 			</div>
 		</section>
-<div class="clearfix"></div>
-	<a name="about">
-		<section class="left-col">
-			<h2>About me</h2>
-				<p style="text-indent: 6%;">Derek Han is a Full stack web developer with a background in UI/UX design and mechanical engineering. He is focusing on Web application now and he is very interested in developing mobile applications, too.</p>
+
+		<section class="one-third-port">
+			<div class="card purple">
+				<h3>Typing Speed Tester</h3><hr>
+				<p>
+					<i class="devicon-javascript-plain"></i>
+					<i class="devicon-html5-plain"></i>
+					<i class="devicon-css3-plain"></i>
+				</p>
+				<p class="red">Web app with Ruby on Rails</p>
+				<p>
+					<a href="typing-tester.html" target="_blank">View project</a>
+				</p>
+				<p>
+					<a href="https://github.com/Donglak-Derek/typing-tester-javascript.git" target="_blank">View Code</a>
+				</p>
+				<p>
+					Event planer application in which users can create/join/leave event.
+					Registration and login with validation.
+				</p>
+			</div>
 		</section>
-		<section class="sidebar">
-			<img src="img/derek_name_color.png">
+
+		<section class="one-third-port">
+			<div class="card purple">
+				<h3>Event planer</h3><hr>
+				<p>
+					<i class="devicon-ruby-plain"></i>
+					<i class="devicon-rails-plain"></i>
+					<i class="devicon-postgresql-plain"></i>
+				</p>
+				<p class="red">Web app with Ruby on Rails</p>
+				<p>
+					<a href="https://github.com/Donglak-Derek/eventplaner.git" target="_blank">View Code</a>
+				</p>
+				<p>
+					Event planer application in which users can create/join/leave event.
+					Registration and login with validation.
+				</p>
+			</div>
 		</section>
-<div class="clearfix"></div>
+
+		<section class="one-third-port">
+			<div class="card purple">
+				<h3>Ihere</h3><hr>
+				<p>
+					<i class="far fa-lightbulb"></i>
+				</p>
+				<p class="red">App Idea</p>
+				<p>
+					<a href="ihere.html">View Project</a>
+				</p>
+				<p>
+					I wanted to make an application to connect people who needs help and who want to help. but I found an app called "Thumbtack" which is almost same app with my idea. So.. I am thinking...
+				</p>
+			</div>
+		</section>
+
+		<section class="one-third-port">
+			<div class="card purple">
+				<h3>AR Magic</h3><hr>
+				<p>
+					<i class="devicon-swift-plain"></i>
+				</p>
+				<p class="red">ios app</p>
+				<p>
+					<a href="https://github.com/Donglak-Derek/ARMagic.git" target="_blank">View Code</a>
+				</p>
+				<p>
+					Basic AR application<br> Drawing in the air<br> Observing 3d model<br> measure distance<br> etc
+				</p>
+			</div>
+		</section>
+
+		<section class="one-third-port">
+			<div class="card purple">
+				<h3>Shoe Market</h3><hr>
+				<p>
+					<i class="devicon-ruby-plain"></i>
+					<i class="devicon-rails-plain"></i>
+					<i class="devicon-postgresql-plain"></i>
+				</p>
+				<p class="red">Web app with Ruby on Rails</p>
+				<p>
+					<a href="http://18.217.124.117" target="_blank">View project</a>
+				</p>
+				<p>
+					<a href="https://github.com/Donglak-Derek/shoesmarket.git" target="_blank">View Code</a>
+				</p>
+				<p>
+					Sheos market application in which users can create/sell/buy shoes.
+					Registration and login with validation.
+
+				</p>
+			</div>
+		</section>
 
 
 
-	<a name="port">
-		<h2>My Portfolio</h2>
-		<section class="one-third-port">
-			<a href="ihere.html"><img src="img/ihere_img.png"></a>
-		</section>
-		<section class="one-third-port">
-			<a href="rails.html"><img src="img/rails_project.png"></a>
-		</section>
-		<section class="one-third-port">
-			<a href="python.html"><img src="img/python_project.png"></a>
-		</section>
+	</div>
+
 <div class="clearfix"></div>
 
 	<a name="contact">
@@ -59,7 +200,7 @@
 			</div>
 		</section>
 		<div class="clearfix"></div>
-		<section class="contact">
+		<section id="Contact" class="contact">
 			<p>This site is about the project I am working on now.</p>
 			<p><a href="http://derekhan.webflow.io/">If you want to my previous works, ClICK HERE!! :)</a></p>
 			<p>Thank you!</p>
@@ -80,7 +221,6 @@
 		<footer class="second">
 			<p>&copy; Derek Han.</p>
 		</footer>
-
 
 
 </body>
