@@ -160,6 +160,10 @@ button {
 .card a {
 	color: yellow;
 }
+.portfolio-end {
+	margin-top: 30px;
+	padding-top: 30px;
+}
 
 .intro {
 	height: 100%;
