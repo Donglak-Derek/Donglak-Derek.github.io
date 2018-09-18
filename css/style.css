@@ -211,9 +211,7 @@ button {
 	float: left;
 }
 
-.one-third-port img:hover {
-	opacity: .6;
-}
+
 .contact a {
 	color: @2C2C2C;
 	/*text-decoration: none;*/
@@ -262,18 +260,6 @@ footer.second p {
 	padding: 5%;
 }
 @media screen and (max-width: 768px) {
-	#menu-icon {
-		margin: 26px 0 0 26px;
-	}
-	nav ul, nav:active ul {
-		padding: 8px 0;
-		left: 23px;
-		top: 34px;
-		width: 50%;
-	}
-	.inner {
-		font-size: 120%;
-	}
 	.content h1 {
 		font-size: 180%;
 	}
@@ -283,6 +269,32 @@ footer.second p {
 	h2 {
 		font-size: 160%;
 	}
+	.letter {
+	  font-size: 100px;
+	  line-height: 60px;
+	  font-family: 'Lato', sans-serif;
+	  font-weight: 800;
+	  letter-spacing: -20px;
+	  mix-blend-mode: color-burn;
+	  position: relative;
+	  transition: font-size ease 2s;
+	  /*transition: letter-spacing ease 2s;*/
+	  transition-delay: 0.1s;
+	  opacity: 0.9;
+	}
+
+	.letter:hover {
+		font-size: 150px;
+		/*letter-spacing: 20px;*/
+	}
+
+	#name p {
+		margin-top: 30px;
+		text-align: left;
+		margin-left: 10px;
+		font-size: 1.5em;
+	}
+
 	.left-col{
 		width: 96%;
 		margin: 0 0 3% 0;
