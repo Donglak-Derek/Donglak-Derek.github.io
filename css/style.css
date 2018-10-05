@@ -4,8 +4,8 @@
 
 /*Global----------------------*/
 body {
-  font-family: monospace;
-  width: 100%;
+  font-family: lato;
+  width: 900px;
   text-align: center;
 }
 
@@ -70,7 +70,7 @@ button {
 .logo {
   	display: block;
 	text-align: left;
-	padding-left: 10%;
+	padding-left: 5%;
 }
 
 .letter {
@@ -128,11 +128,24 @@ button {
   color: #ff80ab;
 }
 
+.small-footer {
+	text-align: left;
+	margin: 20px 20px;
+}
+
+
 /*Devicons---------------*/
 .devicon {
 	font-size: 5em;
 }
 
+.jumbotron{
+	color: #FFFFFF;
+	background-color:#b2c4fc !important;
+}
+.iconss {
+	color: black;
+}
 /*----------------------------------*/
 .title {
 	margin: 10px;
@@ -143,24 +156,29 @@ button {
 }
 
 .card {
-	width: 300PX;
-	height: 400px;
+	color: #bc6d05;
+
 	text-align: center;
-	color: #fff;
+
 	font-size: 1.5em;
-	padding: ;
+	padding: 10px;
 	border-radius: 1em;
 	overflow: scroll;
+	margin-top: 1em;
 	/* Add shadows to create the "card" effect */
     box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
+}
+
+.yellow {
+	color: yellow;
 }
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 6px 8px 16px 0 rgba(0,0,0,0.8);
 }
 .card a {
-	color: yellow;
+	color: green;
 }
 .portfolio-end {
 	margin-top: 30px;

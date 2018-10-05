@@ -14,199 +14,291 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </head>
-<body>	
-
-	<div class="container-fluid">
+<body class="container">	
+<!-- Nav -->
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<ul class="nav justify-content-center custom-nav">
 					<li class="nav-item">
-						<button class="purple nav-link active" onclick="window.location.href='#links'">TOP</button>
+						<button class="purple" onclick="window.location.href='#links'">TOP</button>
 					</li>
 					<li class="nav-item">
-						<button class="orange nav-link" onclick="window.location.href='#Portfolio'">Portfolio</button>
+						<button class="orange" onclick="window.location.href='#Portfolio'">Portfolio</button>
 					</li>
 					<li class="nav-item">
-						<button class="green nav-link disabled" onclick="window.location.href='#Contact'">Contact</button>
+						<button class="green" onclick="window.location.href='#Contact'">Contact</button>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	
-	<div id="name" class="intro">
-	  <span class="logo">
-	    <span id="d" class="letter">D</span>
-	    <span id="e" class="letter">E</span>
-	    <span id="r" class="letter">R</span>
-	    <span id="e2" class="letter">E</span>
-	    <span id="k" class="letter">K</span>
-	  </span>
-	  <span class="logo">
-	    <span id="h" class="letter">H</span>
-	    <span id="a" class="letter">A</span>
-	    <span id="n" class="letter">N</span>
-	    <span id="dot" class="letter">.</span>
-	  </span>
-		<p>I really like writing code.</p>
-		<p>Especially in Ruby on Rails and JavaScript.</p>
-	</div>
 
-	<div class="content space">
-		<h1 class="purple">My full stack technology</h1>
-		<div class="devicon">
-			<section>
-				<p class="title">Language :</p>
-					<i class="devicon-python-plain-wordmark colored"></i>
-					<i class="devicon-ruby-plain-wordmark colored"></i>
-					<i class="devicon-javascript-plain colored"></i>
-					<i class="devicon-html5-plain-wordmark colored"></i>
-					<i class="devicon-css3-plain-wordmark colored"></i>
-			</section>
-			<section>
-				<p class="title">Framework :</p>
-					<i class="devicon-angularjs-plain-wordmark colored"></i>
-					<i class="devicon-express-original-wordmark colored"></i>
-					<i class="devicon-django-plain-wordmark colored"></i>
-					<i class="devicon-rails-plain-wordmark colored"></i>
-			</section>
-			<section>
-				<p class="title">Database :</p>
-					<i class="devicon-mysql-plain-wordmark colored"></i>
-					<i class="devicon-postgresql-plain-wordmark colored"></i>
-					<i class="devicon-mongodb-plain-wordmark colored"></i>
-			</section>
-			<section>
-				<p class="title">etc :</p>
-				<i class="devicon-github-plain-wordmark colored"></i>
-				<i class="devicon-jquery-plain-wordmark colored"></i>
-				<i class="devicon-react-original-wordmark colored"></i>
-				<i class="devicon-nodejs-plain-wordmark colored"></i>
-			</section>
+<!-- Derek Han logo -->
+	<div class="row">
+		<div class="col-md-12">
+			<div id="name" class="intro">
+			  <span class="logo">
+			    <span id="d" class="letter">D</span>
+			    <span id="e" class="letter">E</span>
+			    <span id="r" class="letter">R</span>
+			    <span id="e2" class="letter">E</span>
+			    <span id="k" class="letter">K</span>
+			  </span>
+			  <span class="logo">
+			    <span id="h" class="letter">H</span>
+			    <span id="a" class="letter">A</span>
+			    <span id="n" class="letter">N</span>
+			    <span id="dot" class="letter">.</span>
+			  </span>
+
+				<div class="row">
+					<div class="col-md-12">
+						<blockquote class="blockquote">
+							<footer class="blockquote-footer small-footer">
+								<cite>As more developer tired, USERS are happy</cite>
+							</footer>
+						</blockquote>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
 
-	<div id="Portfolio" class="content space">
-		<h1 class="orange">My Portfolio</h1>
+<!-- my Tech -->
+	<div class="container-fluid text-center">
+		<h1 class="purple">My full stack technology</h1>
+	</div>
 
-		<section class="one-third-port">
-			<div class="card purple">
-				<h3>Tic Tag Toe</h3><hr>
-				<p>
+	<div class="container">
+		<!-- first row -->
+		<div class="row">
+			<div class="col-md-6">
+				<div class="jumbotron">
+					<h4>
+						Language :
+					</h4>
+					<h1 class="display-4 iconss">
+						<i class="devicon-python-plain-wordmark"></i>
+						<i class="devicon-ruby-plain-wordmark"></i>
+						<i class="devicon-javascript-plain"></i>
+						<i class="devicon-html5-plain-wordmark"></i>
+						<i class="devicon-css3-plain-wordmark"></i>
+					</h1>
+				</div>
+			</div>
+						
+				<div class="col-md-6">
+					<div class="jumbotron">
+						<h4>
+							Framework :
+						</h4>
+						<h1 class="display-4 iconss">
+							<i class="devicon-angularjs-plain-wordmark"></i>
+							<i class="devicon-express-original-wordmark"></i>
+							<i class="devicon-django-plain-wordmark"></i>
+							<i class="devicon-rails-plain-wordmark"></i>
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- second row -->
+		<div class="container">		
+			<div class="row">
+				<div class="col-md-6">
+					<div class="jumbotron">
+						<h4>
+							Database :
+						</h4>
+						<h1 class="display-4 iconss">
+							<i class="devicon-mysql-plain-wordmark"></i>
+							<i class="devicon-postgresql-plain-wordmark"></i>
+							<i class="devicon-mongodb-plain-wordmark"></i>
+						</h1>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="jumbotron">
+						<h2>
+							etc :
+						</h2>
+						<h1 class="display-4 iconss">
+							<i class="devicon-github-plain-wordmark"></i>
+							<i class="devicon-jquery-plain-wordmark"></i>
+							<i class="devicon-react-original-wordmark"></i>
+							<i class="devicon-nodejs-plain-wordmark"></i>
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- Poltfolio -->
+	<div id="Portfolio" class="container-fluid text-center">
+		<h1 class="orange">My Portfolio</h1>
+	</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 card bg-danger text-white">
+			<h2>
+				Overtime Tracker
+			</h2><hr>
+			<p>
+				<i class="devicon-ruby-plain-wordmark"></i>
+				<i class="devicon-rails-plain-wordmark"></i>
+			</p>
+			<p class="yellow">Emplyees overtime traker</p>
+			<p>
+				For Companies needs a documentation that salaried employees did or did not get overtime each week.
+			</p>
+			<p>
+				<a href="https://github.com/Donglak-Derek/timescheduler" target="_blank">View Code</a>
+			</p>
+		</div>	
+
+		<div class="col-md-4 card">
+			<h2>
+				My previous design works
+			</h2><hr>
+			<p>
+				<i class="far fa-lightbulb"></i>
+			</p>
+			<p class="red">UI/UX Design</p>
+			<p>
+				I love to make something. I born to be a maker.
+				You can see my Digital works and some artworks.
+				Check my "Creativity" section! :)
+			</p>
+			<p><a href="http://derekhan.webflow.io/">Click HERE!!</a></p>
+		</div>	
+
+
+	</div>
+</div>
+
+<div class="container-fluid ">
+	<div class="row">
+
+		<div class="col-md-4 card">
+			<h2>
+				Tic Tac Toe
+			</h2><hr>
+			<p>
 					<i class="devicon-react-original"></i>
-				</p>
-				<p class="red">Game with React.js</p>
-				<p>
-					<a href="https://github.com/Donglak-Derek/react-tictactoe.git" target="_blank">View Code</a>
-				</p>
-				<p>
+			</p>
+			<p class="red">Game with React.js</p>
+			<p>
 					I tried Tic Tag Toe game with react. It was fun but I need to get a job NOW! 
 				</p>
-			</div>
-		</section>
+			<p>
+				<a href="https://github.com/Donglak-Derek/react-tictactoe.git" target="_blank">View Code</a>
+			</p>
+		</div>
 
-		<section class="one-third-port">
-			<div class="card purple">
-				<h3>Typing Speed Tester</h3><hr>
-				<p>
-					<i class="devicon-javascript-plain"></i>
-					<i class="devicon-html5-plain"></i>
-					<i class="devicon-css3-plain"></i>
-				</p>
-				<p class="red">Web app with Ruby on Rails</p>
-				<p>
-					<a href="typing-tester.html" target="_blank">View project</a>
-				</p>
-				<p>
-					<a href="https://github.com/Donglak-Derek/typing-tester-javascript.git" target="_blank">View Code</a>
-				</p>
-				<p>
-					Event planer application in which users can create/join/leave event.
-					Registration and login with validation.
-				</p>
-			</div>
-		</section>
-
-		<section class="one-third-port">
-			<div class="card purple">
-				<h3>Event planer</h3><hr>
-				<p>
-					<i class="devicon-ruby-plain"></i>
-					<i class="devicon-rails-plain"></i>
-					<i class="devicon-postgresql-plain"></i>
-				</p>
-				<p class="red">Web app with Ruby on Rails</p>
-				<p>
-					<a href="https://github.com/Donglak-Derek/eventplaner.git" target="_blank">View Code</a>
-				</p>
-				<p>
-					Event planer application in which users can create/join/leave event.
-					Registration and login with validation.
-				</p>
-			</div>
-		</section>
-
-		<section class="one-third-port">
-			<div class="card purple">
-				<h3>Ihere</h3><hr>
-				<p>
-					<i class="far fa-lightbulb"></i>
-				</p>
-				<p class="red">App Idea</p>
-				<p>
-					<a href="ihere.html">View Project</a>
-				</p>
-				<p>
-					I wanted to make an application to connect people who needs help and who want to help. but I found an app called "Thumbtack" which is almost same app with my idea. So.. I am thinking...
-				</p>
-			</div>
-		</section>
-
-		<section class="one-third-port">
-			<div class="card purple">
-				<h3>AR Magic</h3><hr>
-				<p>
-					<i class="devicon-swift-plain"></i>
-				</p>
-				<p class="red">ios app</p>
-				<p>
-					<a href="https://github.com/Donglak-Derek/ARMagic.git" target="_blank">View Code</a>
-				</p>
-				<p>
-					Basic AR application<br> Drawing in the air<br> Observing 3d model<br> measure distance<br> etc
-				</p>
-			</div>
-		</section>
-
-		<section class="one-third-port">
-			<div class="card purple">
-				<h3>Shoe Market</h3><hr>
-				<p>
-					<i class="devicon-ruby-plain"></i>
-					<i class="devicon-rails-plain"></i>
-					<i class="devicon-postgresql-plain"></i>
-				</p>
-				<p class="red">Web app with Ruby on Rails</p>
-				<p>
-					<a href="http://18.217.124.117" target="_blank">View project</a>
-				</p>
-				<p>
-					<a href="https://github.com/Donglak-Derek/shoesmarket.git" target="_blank">View Code</a>
-				</p>
-				<p>
-					Sheos market application in which users can create/sell/buy shoes.
-					Registration and login with validation.
-
-				</p>
-			</div>
-		</section>
-		<div class="portfolio-end">
-			<p>This site is about the develop project I did.</p>
-			<p><a href="http://derekhan.webflow.io/">If you want to my previous design works, ClICK HERE!! :)</a></p>
-			<p>Thank you!</p>
+		<div class="col-md-4 card">
+			<h2>
+				Typing Speed Tester
+			</h2><hr>
+			<p>
+				<i class="devicon-javascript-plain"></i>
+				<i class="devicon-html5-plain"></i>
+				<i class="devicon-css3-plain"></i>
+			</p>
+			<p class="red">Web app with Ruby on Rails</p>
+			<p>
+				Event planer application in which users can create/join/leave event.
+				Registration and login with validation.
+			</p>
+			<p>
+				<a href="https://github.com/Donglak-Derek/typing-tester-javascript.git" target="_blank">View Code</a>
+			</p>
+			<p>
+				<a href="typing-tester.html" target="_blank">View project</a>
+			</p>
+		</div>
+		<div class="col-md-4 card">
+			<h2>
+				Event planer
+			</h2><hr>
+			<p>
+				<i class="devicon-ruby-plain"></i>
+				<i class="devicon-rails-plain"></i>
+				<i class="devicon-postgresql-plain"></i>
+			</p>
+			<p class="red">Web app with Ruby on Rails</p>
+			<p>
+				Event planer application in which users can create/join/leave event.
+				Registration and login with validation.
+			</p>
+			<p>
+				<a href="https://github.com/Donglak-Derek/eventplaner.git" target="_blank">View Code</a>
+			</p>
 		</div>
 	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 card">
+			<h2>
+				Ihere
+			</h2><hr>
+			<p>
+				<i class="far fa-lightbulb"></i>
+			</p>
+			<p class="red">App Idea</p>
+			<p>
+				I wanted to make an application to connect people who needs help and who want to help. but I found an app called "Thumbtack" which is almost same app with my idea. So.. I am thinking...
+			</p>
+			<p>
+				<a href="ihere.html">View Project</a>
+			</p>
+		</div>
+
+		<div class="col-md-4 card">
+			<h2>
+				AR Magic
+			</h2><hr>
+			<p>
+				<i class="devicon-swift-plain"></i>
+			</p>
+			<p class="red">ios app</p>
+			<p>
+				Basic AR application<br> Drawing in the air<br> Observing 3d model<br> measure distance<br> etc
+			</p>
+			<p>
+				<a href="https://github.com/Donglak-Derek/ARMagic.git" target="_blank">View Code</a>
+			</p>
+		</div>
+
+		<div class="col-md-4 card">
+			<h2>
+				Shoe Market
+			</h2><hr>
+			<p>
+				<i class="devicon-ruby-plain"></i>
+				<i class="devicon-rails-plain"></i>
+				<i class="devicon-postgresql-plain"></i>
+			</p>
+			<p class="red">Web app with Ruby on Rails</p>
+			<p>
+				Sheos market application in which users can create/sell/buy shoes.
+				Registration and login with validation.
+			</p>
+			<p>
+				<a href="https://github.com/Donglak-Derek/shoesmarket.git" target="_blank">View Code</a>
+			</p>
+		</div>
+	</div>
+</div>
 
 
 <div class="clearfix"></div>
