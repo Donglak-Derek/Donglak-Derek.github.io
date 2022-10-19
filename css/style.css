@@ -70,3 +70,18 @@ a:hover {
     font-size: 4rem;
 }
 
+/* contact section */
+
+
+.contact-me {
+	width: 400px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 3rem 0;
+	background-color: var(--plum);
+}
+
+.my-email {
+	margin-top: 3rem;
+}
+
