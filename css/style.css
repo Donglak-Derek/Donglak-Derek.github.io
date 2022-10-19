@@ -38,26 +38,23 @@ h3 {
 a {
     color: var(--magenta);
 }
-
 a:hover {
     color: var(--hotmag);
     text-decoration: none;
 }
+
 /* intro styles */
 .intro {
     padding-bottom: 10rem;
 }
-
 .intro p {
     font-size: 1rem;
     line-height: 1.5;
 }
-
 .intro .my-name {
     font-family: var(--mono);
     font-size: 1rem;
 }
-
 .my-name span {
     font-family: var(--sans);
     font-size: 4rem;
@@ -65,13 +62,51 @@ a:hover {
     display: block;
     font-weight: 300;
 }
-
 .intro h2 {
     font-size: 4rem;
 }
-/* nav bar */
 
+/* navbar */
+.navbar {
+	font-family: var(--mono);
+	font-size: 80%;
+	padding: 1rem;
+}
+.nav-my-name {
+	font-family: var(--sans);
+}
+.nav-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
 
+/* TODO linkedin icon size and color */
+
+.nav-my-name {
+	flex-basis: 100%;
+	text-align: center;
+	/* border: 1px solid red; */
+}
+/* attribute selector "fa" */
+nav [class*="fa-"] {
+	font-size: 150%;
+	color: var(--aqua);
+}
+.nav-list a {
+	color: var(--white);
+	text-decoration: none;
+	/* clickable area bigger */
+	display: block; 
+}
+.nav-list a:hover {
+	color: var(--magenta);
+}
 /* contact section */
 .contact-me {
 	width: 400px;
@@ -80,7 +115,6 @@ a:hover {
 	padding: 3rem 0;
 	background-color: var(--plum);
 }
-
 .my-email {
 	margin-top: 3rem;
 }
