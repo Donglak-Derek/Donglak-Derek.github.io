@@ -69,10 +69,10 @@ a:hover {
 .intro h2 {
     font-size: 4rem;
 }
+/* nav bar */
+
 
 /* contact section */
-
-
 .contact-me {
 	width: 400px;
 	text-align: center;
@@ -84,4 +84,5 @@ a:hover {
 .my-email {
 	margin-top: 3rem;
 }
+
 
