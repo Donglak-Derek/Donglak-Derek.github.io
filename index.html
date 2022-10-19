@@ -7,10 +7,31 @@
 	<title>Derek Han's Portfolio</title>
 	<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Oxygen Mono' rel='stylesheet'>
+	<script src="https://kit.fontawesome.com/fa893ef33e.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<section class="intro">
+	<nav class="navbar">
+		<ul class="nav-list">
+			<li class="nav-my-name"><h1><a href="index.html">Derek Han</a></h1></li>
+			<li class="nav-my-project"><a href="#my-project">Projects</a></li>
+			<li class="nav-about-me"><a href="#about-me">About</a></li>
+			<li class="nav-my-contact"><a href="#my-contact">Contact</a></li>
+			<li class="nav-my-linkedin">
+				<a href="https://www.linkedin.com/in/hiderek/" target="_blank">
+					<span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+					<!-- Screen reader only -->
+					<span class="sr-only">LinkedIn</span>
+				</a>
+			</li>
+			<li class="nav-my-github"><a href="https://github.com/Donglak-Derek" target="_blank">
+				<span class="fa-brands fa-square-github" aria-hidden="true"></span>
+				<span class="sr-only">Github</span>
+			</a></li>
+			<li class="nav-my-resume"><a href="#" target="_blank">Resume</a></li>
+		</ul>
+	</nav>
+	<section class="intro" id="about-me">
 		<P class="my-name">Hi, my name is <span>Derek Han.</span></P>
 		<h2 class="my-title">I develop the front end of websites.</h2>
 		<p class="my-skill">I'm a developer specializing in HTML, CSS, and JavaScript.</p>
@@ -18,7 +39,7 @@
 		<p class="my-design">And I design <a href="https://www.behance.net/Derekhan" class="my-behance" target="_blank">websites and apps</a>.</p>
 	</section>
 	
-	<section class="contact-me">
+	<section class="contact-me" id="my-contact">
 			<h2 class="contact-me-title">Contact me</h2>
 			<p class="contact-me-text">I'm always interested in hearing about new opportunites for coding challenges, ux design sprint, and web 3.0.</p>
 			<p class="my-email"><a href="mailto:donglak.han@gmail.com">Email me</a></p>
