@@ -94,9 +94,12 @@ a:hover {
 	/* border: 1px solid red; */
 }
 /* attribute selector "fa" */
-nav [class*="fa-"] {
+.navbar [class*="fa-"] {
 	font-size: 150%;
 	color: var(--aqua);
+}
+.navbar h1 [class*="fa-"]{
+	font-size: 100%;
 }
 .nav-list a {
 	color: var(--white);
@@ -104,7 +107,8 @@ nav [class*="fa-"] {
 	/* clickable area bigger */
 	display: block; 
 }
-.nav-list a:hover {
+.nav-list a:hover,
+.navbar [class*="fa-"]:hover {
 	color: var(--magenta);
 }
 /* contact section */
@@ -118,5 +122,42 @@ nav [class*="fa-"] {
 .my-email {
 	margin-top: 3rem;
 }
+.nav-my-resume {
+	background-color: var(--magenta);
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+.nav-my-resume:hover,
+.nav-my-resume a:hover{
+	color: var(--white);
+	background-color: var(--hotmag);
+}
 
+/* Footer section */
+footer {
+	text-align: center;
+}
+footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 2rem 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 3rem;
+	font-size: 3rem;
+}
 
+@media (min-width: 850px){
+	.navbar {
+		max-width: 1200px;
+		margin: 0 auto;
+		border: 1px solid red;
+	}
+	.nav-my-name {
+		flex-basis: auto;
+		text-align: left;
+		margin-right: auto;
+
+	}
+}
