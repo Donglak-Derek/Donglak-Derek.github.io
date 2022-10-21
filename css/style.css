@@ -43,9 +43,21 @@ a:hover {
     text-decoration: none;
 }
 
+/* BG color divs */
+.section-plum {
+	background-color: var(--plum);
+}
+.gradient {
+	background: linear-gradient(90deg, rgba(255,23,228,1) 0%, rgba(134,251,251,1) 100%);stop-color: ;
+	height: 2px;
+}
+
+
 /* intro styles */
 .intro {
-    padding-bottom: 10rem;
+    padding: 4rem 1rem 10rem 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 .intro p {
     font-size: 1rem;
@@ -86,7 +98,7 @@ a:hover {
 	gap: 2rem;
 }
 
-/* TODO linkedin icon size and color */
+/* linkedin icon size and color */
 
 .nav-my-name {
 	flex-basis: 100%;
@@ -117,8 +129,8 @@ a:hover {
 	text-align: center;
 	margin: 0 auto;
 	padding: 3rem 0;
-	background-color: var(--plum);
 }
+
 .my-email {
 	margin-top: 3rem;
 }
@@ -132,10 +144,22 @@ a:hover {
 	color: var(--white);
 	background-color: var(--hotmag);
 }
-
+.button {
+	background-color: var(--magenta);
+	color: var(--white);
+	padding: 0.5rem;
+	border-radius: 5px;
+	font-family: var(--mono);
+	text-decoration: none;
+}
+.button:hover {
+	color: white;
+	background-color: var(--hotmag);
+}
 /* Footer section */
 footer {
 	text-align: center;
+	padding: 4rem 0;
 }
 footer ul {
 	list-style: none;
@@ -152,7 +176,7 @@ footer ul {
 	.navbar {
 		max-width: 1200px;
 		margin: 0 auto;
-		border: 1px solid red;
+		/* border: 1px solid red; */
 	}
 	.nav-my-name {
 		flex-basis: auto;
