@@ -171,6 +171,50 @@ footer ul {
 	gap: 3rem;
 	font-size: 3rem;
 }
+/* project section */
+.project-container {
+	background-color: var(--dkblue);
+}
+.my-project {
+	padding: 4rem 1rem 10rem 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.my-project h4 {
+	margin-bottom: 0.1rem;
+	margin-left: 1rem;
+}
+
+.my-project h2 {
+	color: var(--aqua);
+	margin-bottom: 2rem;
+	margin-left: 1rem;
+}
+.project-description {
+	font-size: 1.5rem;
+	padding: 1rem;
+	background-color: var(--black);
+	border-radius: 1rem;
+}
+.tech-used {
+	list-style: none;
+	display: flex;
+	gap:2rem;
+	margin-left: 0;
+	margin-top: .1rem;
+	padding-left: 1rem;
+}
+.project-pic {
+	padding: 1rem;
+	border: 1px solid var(--aqua);
+	border-radius: 1rem;
+	width: 100%;
+}
+
+
+
+
+
 
 @media (min-width: 850px){
 	.navbar {
@@ -182,6 +226,8 @@ footer ul {
 		flex-basis: auto;
 		text-align: left;
 		margin-right: auto;
-
 	}
+
+
 }
+
