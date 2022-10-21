@@ -44,6 +44,9 @@ a:hover {
 }
 
 /* BG color divs */
+.section-blue {
+	background-color: var(--dkblue);
+}
 .section-plum {
 	background-color: var(--plum);
 }
@@ -54,43 +57,43 @@ a:hover {
 
 
 /* intro styles */
-.intro {
+#intro {
     padding: 4rem 1rem 10rem 1rem;
 	max-width: 1200px;
 	margin: 0 auto;
 }
-.intro p {
+#intro p {
     font-size: 1rem;
     line-height: 1.5;
 }
-.intro .my-name {
+#intro .name {
     font-family: var(--mono);
     font-size: 1rem;
 }
-.my-name span {
+.name span {
     font-family: var(--sans);
     font-size: 4rem;
     color: var(--aqua);
     display: block;
     font-weight: 300;
 }
-.intro h2 {
+#intro h2 {
     font-size: 4rem;
 }
 
-/* navbar */
-.navbar {
+/* Navigation */
+nav {
 	font-family: var(--mono);
 	font-size: 80%;
-	padding: 1rem;
+	padding: 4rem 1rem;
 }
-.nav-my-name {
+nav h1 a {
 	font-family: var(--sans);
 }
-.nav-list {
-	list-style-type: none;
-	padding: 0;
+nav ul {
 	margin: 0;
+	padding: 0;
+	list-style-type: none;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -98,51 +101,29 @@ a:hover {
 	gap: 2rem;
 }
 
-/* linkedin icon size and color */
-
-.nav-my-name {
+nav li:first-child {
 	flex-basis: 100%;
 	text-align: center;
 	/* border: 1px solid red; */
 }
 /* attribute selector "fa" */
-.navbar [class*="fa-"] {
+nav [class*="fa-"] {
 	font-size: 150%;
 	color: var(--aqua);
 }
-.navbar h1 [class*="fa-"]{
+nav h1 [class*="fa-"]{
 	font-size: 100%;
+	color: var(--aqua);
 }
-.nav-list a {
+nav a {
 	color: var(--white);
 	text-decoration: none;
 	/* clickable area bigger */
 	display: block; 
 }
-.nav-list a:hover,
-.navbar [class*="fa-"]:hover {
+nav a:hover,
+nav [class*="fa-"]:hover {
 	color: var(--magenta);
-}
-/* contact section */
-.contact-me {
-	width: 400px;
-	text-align: center;
-	margin: 0 auto;
-	padding: 3rem 0;
-}
-
-.my-email {
-	margin-top: 3rem;
-}
-.nav-my-resume {
-	background-color: var(--magenta);
-	padding: 0.5rem;
-	border-radius: 5px;
-}
-.nav-my-resume:hover,
-.nav-my-resume a:hover{
-	color: var(--white);
-	background-color: var(--hotmag);
 }
 .button {
 	background-color: var(--magenta);
@@ -156,6 +137,76 @@ a:hover {
 	color: white;
 	background-color: var(--hotmag);
 }
+
+/* contact section */
+#contact {
+	width: 400px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 3rem 0;
+}
+
+#contact p:last-child {
+	margin-top: 3rem;
+}
+
+
+.nav-my-resume {
+	background-color: var(--magenta);
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+.nav-my-resume:hover,
+.nav-my-resume a:hover{
+	color: var(--white);
+	background-color: var(--hotmag);
+}
+
+/* Project section */
+
+#projects {
+	padding: 4rem 1rem;
+}
+#projects h2 {
+	font-size: 2.5rem;
+	margin-bottom: calc(2.5rem * 1.5);
+}
+#projects h3 {
+	color: var(--aqua);
+}
+
+#projects h4 {
+	font-size: 1rem;
+	font-family: var(--mono);
+	margin: 0;
+}
+.blackbox {
+	padding: 1rem;
+	border-radius: 10px;
+	color: var(--white);
+	background-color: var(--black);
+	font-size: 1rem;
+	line-height: 1.5;
+}
+#projects ul {
+	list-style-type: none;
+	padding: 0%;
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	gap: 1rem;
+	font-size: 1rem;
+}
+#projects img {
+	margin: 2rem 0 4rem 0;
+	padding: 1rem;
+	border-left: 1px solid var(--aqua);
+	border-top: 1px solid var(--aqua);
+	border-radius: 25px;
+	width: 100%;
+}
+
 /* Footer section */
 footer {
 	text-align: center;
@@ -171,49 +222,38 @@ footer ul {
 	gap: 3rem;
 	font-size: 3rem;
 }
-/* project section */
-.project-container {
-	background-color: var(--dkblue);
-}
-.my-project {
-	padding: 4rem 1rem 10rem 1rem;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-.my-project h4 {
-	margin-bottom: 0.1rem;
-	margin-left: 1rem;
-}
 
-.my-project h2 {
-	color: var(--aqua);
-	margin-bottom: 2rem;
-	margin-left: 1rem;
+@media (min-width: 800px) {
+	article {
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+	}
+	#projects img {
+		grid-column: 1/6;
+		grid-row: 1/2;
+	}
+	.text {
+		order: 2;
+		text-align: right;
+		grid-column: 5/11;
+		grid-row: 1/2;
+	}
+	#projects ul {
+		justify-content: flex-end;
+	}
+	#projects .reverse .text {
+		grid-column: 1/7;
+		order: 2;
+		text-align: left;
+	}
+	#projects .reverse img {
+		grid-column: 6/11;
+		grid-row: 1/2;
+	}
+	#projects .reverse ul{
+		justify-content: flex-start;
+	}
 }
-.project-description {
-	font-size: 1.5rem;
-	padding: 1rem;
-	background-color: var(--black);
-	border-radius: 1rem;
-}
-.tech-used {
-	list-style: none;
-	display: flex;
-	gap:2rem;
-	margin-left: 0;
-	margin-top: .1rem;
-	padding-left: 1rem;
-}
-.project-pic {
-	padding: 1rem;
-	border: 1px solid var(--aqua);
-	border-radius: 1rem;
-	width: 100%;
-}
-
-
-
-
 
 
 @media (min-width: 850px){

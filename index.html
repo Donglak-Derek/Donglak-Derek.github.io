@@ -11,9 +11,10 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<nav class="navbar">
-		<ul class="nav-list">
-			<li class="nav-my-name">
+<!-- Navbar -->
+	<nav>
+		<ul>
+			<li>
 				<h1>
 					<a href="./index.html">
 						<span class="fa-regular fa-face-smile-beam" aria-hidden="true"></span>
@@ -21,67 +22,106 @@
 					</a>
 				</h1>
 			</li>
-			<li class="nav-my-project"><a href="#my-project">Projects</a></li>
-			<li class="nav-about-me"><a href="#about-me">About</a></li>
-			<li class="nav-my-contact"><a href="#my-contact">Contact</a></li>
-			<li class="nav-my-linkedin">
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#intro">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li>
 				<a href="https://www.linkedin.com/in/hiderek/" target="_blank">
 					<span class="fa-brands fa-linkedin" aria-hidden="true"></span>
 					<!-- Screen reader only -->
 					<span class="sr-only">LinkedIn</span>
 				</a>
 			</li>
-			<li class="nav-my-github">
+			<li>
 				<a href="https://github.com/Donglak-Derek" target="_blank">
 					<span class="fa-brands fa-square-github" aria-hidden="true"></span>
 					<span class="sr-only">Github</span>
 				</a>
 			</li>
-			<li class="nav-my-resume"><a href="#" target="_blank">Resume</a></li>
+			<!-- To do resume -->
+			<li><a href="#" target="_blank" class="button">Resume</a></li>
 		</ul>
 	</nav>
-	<section class="intro" id="about-me">
-		<P class="my-name">Hi, my name is <span>Derek Han.</span></P>
-		<h2 class="my-title">I develop websites.</h2>
-		<p class="my-skill">I'm a developer specializing in HTML, CSS, and JavaScript.</p>
-		<p class="my-current">Currently, I'm making a career switch from a Microsoft Azure web app engineer to a front-end web developer.</p>
-		<p class="my-design">And I design UI/UX <a 
+
+<!-- Intro -->
+	<section id="intro">
+		<P class="name">Hi, my name is <span>Derek Han.</span></P>
+		<h2>I develop websites.</h2>
+		<p>I'm a developer specializing in HTML, CSS, and JavaScript.</p>
+		<p>Currently, I'm making a career switch from a Microsoft Azure web app engineer to a front-end web developer.</p>
+		<p>And I design UI/UX <a 
 			href="https://www.behance.net/Derekhan" class="my-behance" target="_blank">
 			<span class="sr-only">Behance</span>
 			<span class="fa-brands fa-square-behance" aria-hidden="true">.</span>
 			</a></p>
 	</section>
-	
-	<div class="project-container">
-		<section class="my-project">
-			<h4>Latest Project</h4>
-			<h2>Wall of Wonder</h2>
-			<div class="project-description">
-				<p>Description of the project. This should be fairly concise while also describine the key components that you developed or worked on. It can be as long as you need it to be but should at least be a few sentences long. Be sure to include specific links anywhere in the description. A link like <a href="#">this</a>, and multiple links look <a href="#">like this</a> and <a href="#">like this</a>.</p>
-				</div>
-			<h4>Technologies used include:</h4>
-			<ul class="tech-used">
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>SVG</li>
-			</ul>
-			<img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png" alt="Screenshot of the Wall of Wonder." class="project-pic" />
-	</div>
+
+<!-- project -->
+	<section id="projects" class="section-blue">
+		<h2>Project I'm proud of</h2>
+<!-- project 1-->
+		<article>
+			<div class="text">
+				<h4>Latest Project</h4>
+				<h3>Wall of Wonder</h3>
+				<p class="blackbox">Description of the project. This should be fairly concise while also describine the key components that you developed or worked on. It can be as long as you need it to be but should at least be a few sentences long. Be sure to include specific links anywhere in the description. A link looks like <a href="#">this</a>, and multiple links look <a href="#">like this</a> and <a href="#">like this</a>.</p>
+				<h4>Technologies used include:</h4>
+				<ul class="tech-used">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>SVG</li>
+				</ul>
+			</div>
+			<img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png" />
+		</article>
+<!-- project 2-->
+		<article class="reverse">
+			<div class="text">
+				<h4>Bootcamp Project</h4>
+				<h3>Feed-a-Star-Mole Game</h3>
+				<p class="blackbox">Description of the project. This should be fairly concise while also describine the key components that you developed or worked on. It can be as long as you need it to be but should at least be a few sentences long. Be sure to include specific links anywhere in the description. A link looks like <a href="#">this</a>, and multiple links look <a href="#">like this</a> and <a href="#">like this</a>.</p>
+				<h4>Technologies used include:</h4>
+				<ul class="tech-used">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>SVG</li>
+				</ul>
+			</div>
+			<img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-5.png" alt="Screenshot of the Frontend Masters Bootcamp." />
+		</article>
+<!-- project 3-->
+		<article>
+			<div class="text">
+				<h4>Latest Project</h4>
+				<h3>Wall of Wonder</h3>
+				<p class="blackbox">Description of the project. This should be fairly concise while also describine the key components that you developed or worked on. It can be as long as you need it to be but should at least be a few sentences long. Be sure to include specific links anywhere in the description. A link looks like <a href="#">this</a>, and multiple links look <a href="#">like this</a> and <a href="#">like this</a>.</p>
+				<h4>Technologies used include:</h4>
+				<ul class="tech-used">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>SVG</li>
+				</ul>
+			</div>
+			<img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-4.png" alt="Screenshot of the Wall of Wonder Collections."  />
+		</article>
 	</section>
 
+<!-- contact info -->
 	<div class="gradient"></div>
 	<div class="section-plum">
-		<section class="contact-me" id="my-contact">
-				<h2 class="contact-me-title">Contact me</h2>
-				<p class="contact-me-text">I'm always interested in hearing about new opportunities, coding challenges, UX design sprints, and web 3.0..</p>
+		<section id="contact">
+				<h2>Contact me</h2>
+				<p>I'm always interested in hearing about new opportunities, coding challenges, UX design sprints, and web 3.0..</p>
 				<p class="my-email"><a href="mailto:donglak.han@gmail.com" class="button">Email me</a></p>
 		</section>
 	</div>
 	<div class="gradient"></div>
-	<footer>
-		<h2 class="footer-title">Derek Han﹒Web developer</h2>
 
-		<ul class="icons">
+<!-- Footer -->
+	<footer>
+		<h2>Derek Han﹒Web developer</h2>
+
+		<ul>
 			<li>
 				<a 
 				href="https://www.linkedin.com/in/hiderek/" target="_blank">
@@ -102,7 +142,7 @@
 				</a>
 			</li>
 		</ul>
-		<p class="copyright"><small>&copy; 2022 Derek Han. All rights reserved.</small></p>
+		<p><small>&copy; 2022 Derek Han. All rights reserved.</small></p>
 	</footer>
 </body>
 </html>
