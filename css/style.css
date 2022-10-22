@@ -42,6 +42,9 @@ a:hover {
     color: var(--hotmag);
     text-decoration: none;
 }
+img {
+	width: 100%;
+}
 
 /* BG color divs */
 .section-blue {
@@ -151,17 +154,6 @@ nav [class*="fa-"]:hover {
 }
 
 
-.nav-my-resume {
-	background-color: var(--magenta);
-	padding: 0.5rem;
-	border-radius: 5px;
-}
-.nav-my-resume:hover,
-.nav-my-resume a:hover{
-	color: var(--white);
-	background-color: var(--hotmag);
-}
-
 /* Project section */
 
 #projects {
@@ -257,17 +249,16 @@ footer ul {
 
 
 @media (min-width: 850px){
-	.navbar {
+	nav {
 		max-width: 1200px;
 		margin: 0 auto;
 		/* border: 1px solid red; */
 	}
-	.nav-my-name {
+	nav li:first-child {
 		flex-basis: auto;
 		text-align: left;
 		margin-right: auto;
 	}
-
-
 }
+
 
