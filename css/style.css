@@ -12,6 +12,9 @@
     --sans: Oxygen, sans-serif;
 }
 /* border box model: https://css-tricks.com/box-sizing/ */
+.hamburger {
+	display: none;
+}
 html {
     box-sizing: border-box;
 }
@@ -85,6 +88,11 @@ img {
 }
 
 /* Navigation */
+
+.hamberger {
+	font-size: 2rem;
+	padding: 1rem;
+}
 nav {
 	font-family: var(--mono);
 	font-size: 80%;
@@ -214,7 +222,7 @@ footer ul {
 	gap: 3rem;
 	font-size: 3rem;
 }
-
+/* projects section for less than 800 */
 @media (min-width: 800px) {
 	article {
 		display: grid;
@@ -247,7 +255,7 @@ footer ul {
 	}
 }
 
-
+/* less than 850 for navbar */
 @media (min-width: 850px){
 	nav {
 		max-width: 1200px;
@@ -260,5 +268,39 @@ footer ul {
 		margin-right: auto;
 	}
 }
+/* nav for mobile  */
+@media (max-width: 600px){
+	.hamburger {
+		display: flex;
+	}
+	nav {
+		background-color: red;
+		position: absolute;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+		/* positioning the close button and navbar */
+		display: flex;
+		justify-content: center;
 
+		/* animate slide up/down */
+		transform: translateY(-50%);
+		transition: transform 0.2s ease;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-flow: column wrap;
+		gap: 1.5rem;
+		align-items: center;
+	  }
+	nav:target {
+		transform: translateY(0);
+	  }
+}
 
