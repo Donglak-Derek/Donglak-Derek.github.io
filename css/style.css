@@ -12,9 +12,7 @@
     --sans: Oxygen, sans-serif;
 }
 /* border box model: https://css-tricks.com/box-sizing/ */
-.hamburger {
-	display: none;
-}
+
 html {
     box-sizing: border-box;
 }
@@ -88,11 +86,11 @@ img {
 }
 
 /* Navigation */
-
-.hamberger {
-	font-size: 2rem;
-	padding: 1rem;
+.hamburger,
+.close {
+	display: none;
 }
+
 nav {
 	font-family: var(--mono);
 	font-size: 80%;
@@ -270,11 +268,14 @@ footer ul {
 }
 /* nav for mobile  */
 @media (max-width: 600px){
-	.hamburger {
-		display: flex;
+	.hamburger,
+	.close {
+		display: block;
+		font-size: 2rem;
+		padding: 1rem;
 	}
 	nav {
-		background-color: red;
+		background-color: var(--black);
 		position: absolute;
 		z-index: 1000;
 		top: 0;
@@ -287,10 +288,10 @@ footer ul {
 		justify-content: center;
 
 		/* animate slide up/down */
-		transform: translateY(-50%);
+		transform: translateY(-100%);
 		transition: transform 0.2s ease;
 	}
-	ul {
+	nav ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -298,9 +299,21 @@ footer ul {
 		flex-flow: column wrap;
 		gap: 1.5rem;
 		align-items: center;
+		justify-content: flex-start;
 	  }
+	nav li:first-child {
+		flex-basis: auto;
+		text-align: left;
+		margin-right: auto;
+	}
+
 	nav:target {
 		transform: translateY(0);
+	  }
+	  .fa-times {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
 	  }
 }
 
