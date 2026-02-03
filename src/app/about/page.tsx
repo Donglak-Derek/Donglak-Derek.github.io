@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <Navbar />
-      <main className="max-w-4xl mx-auto px-6 py-32">
+      <main className="max-w-4xl mx-auto px-6 py-20 md:py-32">
         <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-12">
           {/* Sidebar */}
           <div className="space-y-6">
@@ -33,14 +33,14 @@ export default function About() {
 
           {/* Content */}
           <div className="space-y-8">
-            <h1 className="text-4xl font-bold tracking-tight">The Intersection of<br/>Logic & Creativity</h1>
+            <h1 className="text-3xl md:text-5xl font-bold tracking-tight">The Intersection of<br/>Logic & Creativity</h1>
             
             <div className="space-y-6 text-[#999] leading-relaxed">
               <p>
                 I am a <strong className="text-white">UI/UX Designer</strong> and <strong className="text-white">Front-end Developer</strong> specialized in creating intuitive digital experiences. Currently, I'm pivoting from a background in Microsoft Azure engineering to focus entirely on user-centered design and interface development.
               </p>
               <p>
-                My journey in tech began with cloud infrastructure, where I learned the importance of scalability and performance. However, I quickly realized my passion lay in the visual and interactive layers of technology—the parts that people actually touch and feel.
+                My journey in tech began with cloud infrastructure, where I learned the importance of scalability and performance. However, I quickly realized my passion lay in the visual and interactive layers of technology, the parts that people actually touch and feel.
               </p>
               <p>
                 I believe that good design is invisible. It should solve problems without creating new ones. When I'm not pushing pixels in Figma or writing clean CSS, I'm exploring new web technologies and adhering to the "Ship fast, learn fast" philosophy.

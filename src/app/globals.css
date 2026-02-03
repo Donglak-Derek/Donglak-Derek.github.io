@@ -35,3 +35,13 @@ body {
     linear-gradient(to bottom, #111 1px, transparent 1px);
   mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
 }
+
+/* Hero Glow Animation */
+@keyframes glow {
+  0%, 100% { opacity: 0.03; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 0.06; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+.animate-glow {
+  animation: glow 8s ease-in-out infinite;
+}
