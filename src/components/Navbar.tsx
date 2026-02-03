@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
@@ -9,20 +10,24 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full z-50 backdrop-blur-md border-b border-[#333] bg-black/50">
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
         
         {/* Logo Section */}
         <Link 
           href="/" 
-          className="flex items-center gap-2 font-bold text-lg tracking-tight hover:opacity-80 transition-opacity"
+          className="flex items-center gap-3 font-bold text-lg tracking-tight hover:opacity-80 transition-opacity"
           onClick={() => setIsOpen(false)}
         >
-            <div className="w-6 h-6 bg-white text-black flex items-center justify-center rounded-xs">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 2L2 22h20L12 2z" />
-                </svg>
+            <div className="relative w-8 h-8">
+                <Image 
+                    src="/logo.png" 
+                    alt="Derek Han Logo" 
+                    fill 
+                    className="object-contain" 
+                    priority 
+                />
             </div>
-            <span>Derek Han</span>
+            <span className="hidden md:block">Derek Han</span>
         </Link>
         
         {/* Desktop Links (Hidden on Mobile) */}
