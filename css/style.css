@@ -1,0 +1,251 @@
+/* variables for colors, font stacks and sizes. */
+:root {
+    /* Modern UI/UX Palette */
+    --bg-body: #0f0f11;
+    --bg-card: #1c1c1f;
+    --bg-card-hover: #252529;
+    
+    --text-main: #ffffff;
+    --text-muted: #a1a1aa;
+    --text-accent: #8b5cf6; /* Violet */
+    --text-accent-hover: #a78bfa;
+
+    --gradient-1: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+    
+    /* Typography */
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Oxygen Mono', monospace;
+    
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+}
+
+/* Reset & Base */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-sans);
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 var(--spacing-sm) 0;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+a {
+    color: var(--text-accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+a:hover {
+    color: var(--text-accent-hover);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Utilities */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+.text-gradient {
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-primary {
+    background: var(--gradient-1);
+    color: white;
+}
+.btn-primary:hover {
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -10px rgba(139, 92, 246, 0.5);
+}
+
+/* Navigation */
+nav {
+    padding: var(--spacing-md) 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+nav .nav-links {
+    display: flex;
+    gap: var(--spacing-md);
+}
+nav .nav-links a {
+    color: var(--text-muted);
+    font-weight: 500;
+}
+nav .nav-links a:hover {
+    color: var(--text-main);
+}
+.hamburger, .close { display: none; }
+
+/* Hero Section */
+#hero {
+    padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
+    text-align: left;
+}
+#hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    margin-bottom: var(--spacing-sm);
+}
+#hero .subtitle {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    color: var(--text-muted);
+    max-width: 600px;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Projects Grid */
+#projects {
+    padding: var(--spacing-lg) 0;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.project-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: transform 0.3s ease, background 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    background: var(--bg-card-hover);
+}
+.project-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    background-color: #2a2a2e; /* Placeholder bg */
+}
+.project-content {
+    padding: var(--spacing-md);
+}
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: var(--spacing-xs);
+    flex-wrap: wrap;
+}
+.tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-accent);
+    background: rgba(139, 92, 246, 0.1);
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+}
+.project-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+}
+.project-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* About Section */
+#about {
+    padding: var(--spacing-lg) 0;
+}
+.about-content {
+    max-width: 800px;
+}
+
+/* Contact */
+#contact {
+    padding: var(--spacing-lg) 0 var(--spacing-xl) 0;
+    text-align: center;
+}
+#contact h2 {
+    font-size: 2.5rem;
+}
+
+/* Footer */
+footer {
+    padding: var(--spacing-md) 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    text-align: center;
+    color: var(--text-muted);
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-md) 0;
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav .nav-links {
+        display: none; /* simple mobile hide for now, or keep old hamburger logic if preferred */
+    }
+    /* Re-implementing mobile menu would require JS, sticking to simple for now or reusing old simple logic */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Mobile Nav Logic (Optional - if we want to keep the old slide-in) */
+    /* For this modernization, let's keep it simple first */
+}

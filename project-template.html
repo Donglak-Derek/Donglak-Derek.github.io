@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project Case Study - Derek Han</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+	<!-- Icons -->
+	<script src="https://kit.fontawesome.com/fa893ef33e.js" crossorigin="anonymous"></script>
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Specific styles for case study */
+        .case-study-hero {
+            padding: var(--spacing-xl) 0 var(--spacing-md) 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .case-study-meta {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+        .meta-item h4 {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+        .case-section {
+            padding: var(--spacing-lg) 0;
+        }
+        .case-section h2 {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-accent);
+        }
+        .case-image {
+            margin: var(--spacing-md) 0;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .text-block {
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+	<nav>
+		<div class="container">
+			<ul>
+				<li>
+					<a href="./index.html" class="logo">
+						<span class="fa-solid fa-arrow-left" style="font-size: 1rem; margin-right: 0.5rem;"></span>
+						<span>Back to Portfolio</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+<!-- Hero -->
+	<header class="case-study-hero">
+		<div class="container">
+			<span class="tag">Mobile App Design</span>
+			<h1 style="margin-top: 1rem;">Fintech Banking App Redesign</h1>
+			<p class="subtitle">Reimagining the mobile banking experience for the digital-native generation.</p>
+            
+            <div class="case-study-meta">
+                <div class="meta-item">
+                    <h4>Role</h4>
+                    <p>Lead UI/UX Designer</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Timeline</h4>
+                    <p>3 Weeks</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Tools</h4>
+                    <p>Figma, Photoshop, After Effects</p>
+                </div>
+            </div>
+		</div>
+	</header>
+
+    <div class="case-image container">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop" alt="Hero Image">
+    </div>
+
+<!-- Content -->
+    <section class="case-section">
+        <div class="container text-block">
+            <h2>The Challenge</h2>
+            <p>Users found the existing banking application cluttered and difficult to navigate. Key features like transfers and account settings were buried under multiple menus, leading to frustration and high drop-off rates.</p>
+            <br>
+            <h3>Goals</h3>
+            <ul>
+                <li>Simplify the navigation structure.</li>
+                <li>Modernize the visual language.</li>
+                <li>Improve accessibility for all users.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="case-section" style="background: var(--bg-card);">
+        <div class="container text-block">
+            <h2>The Process</h2>
+            <p>I started by analyzing competitor apps and conducting user interviews to understand pain points. Based on the insights, I created low-fidelity wireframes to test navigation flows.</p>
+        </div>
+        <div class="container case-image">
+             <!-- Placeholder for wireframe image -->
+            <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=2670&auto=format&fit=crop" alt="Wireframing Process">
+        </div>
+    </section>
+
+    <section class="case-section">
+        <div class="container text-block">
+            <h2>The Solution</h2>
+            <p>The new design introduces a "Quick Action" floating button for common tasks, a cleaner dashboard with customizable widgets, and a dark mode option.</p>
+        </div>
+        <div class="container case-image">
+            <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=2670&auto=format&fit=crop" alt="Final UI">
+        </div>
+    </section>
+
+    <section class="case-section">
+        <div class="container text-block">
+            <h2>Outcome & Learnings</h2>
+            <p>Initial testing showed a 40% reduction in time-to-task for money transfers. I learned the importance of accounting for edge cases in financial data visualization.</p>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <section id="contact">
+		<div class="container">
+			<h2>Like what you see?</h2>
+			<a href="mailto:donglak.han@gmail.com" class="btn btn-primary">Let's Talk</a>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p><small>&copy; 2024 Derek Han. Crafted with code.</small></p>
+		</div>
+	</footer>
+
+</body>
+</html>
