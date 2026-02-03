@@ -1,158 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Derek Han - UI/UX Designer & Developer</title>
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
-	<!-- Icons -->
-	<script src="https://kit.fontawesome.com/fa893ef33e.js" crossorigin="anonymous"></script>
-	<!-- Styles -->
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derek Han | UI/UX Designer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/fa893ef33e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Navbar -->
-	<nav>
-		<div class="container">
-			<ul>
-				<li>
-					<a href="./index.html" class="logo">
-						<span class="fa-regular fa-face-smile-beam" aria-hidden="true"></span>
-						<span>Derek Han</span>
-					</a>
-				</li>
-				<li class="nav-links">
-					<a href="#projects">Work</a>
-					<a href="#about">About</a>
-					<a href="#contact">Contact</a>
-					<a href="#" target="_blank" class="btn btn-primary">Resume</a>
-				</li>
-				<!-- Mobile Menu Toggle (To be implemented if needed) -->
-				<li class="hamburger">
-					<span class="fas fa-bars"></span>
-				</li>
-			</ul>
-		</div>
-	</nav>
+<!-- Navigation -->
+<nav>
+    <div class="container">
+        <a href="/" class="logo">
+            <svg width="24" height="24" viewBox="0 0 75 65" fill="#fff" style="vertical-align: middle; margin-right: 8px;">
+                <path d="M37.59.25l36.95 64H.64l36.95-64z"></path>
+            </svg>
+            Derek Han
+        </a>
+        <div class="nav-links">
+            <a href="#projects">Work</a>
+            <a href="#about">About</a>
+            <a href="mailto:donglak.han@gmail.com">Contact</a>
+            <a href="#" class="btn btn-primary" style="height: 32px; padding: 0 12px; font-size: 0.85rem;">Resume</a>
+        </div>
+    </div>
+</nav>
 
-<!-- Hero -->
-	<header id="hero">
-		<div class="container">
-			<h1>Designing <span class="text-gradient">Intuitive</span><br>Digital Experiences.</h1>
-			<p class="subtitle">Hi, I'm Derek Han. A UI/UX Designer and Frontend Developer passionate about bridging the gap between design and clean code.</p>
-			<a href="#projects" class="btn btn-primary">View My Work</a>
-		</div>
-	</header>
+<!-- Hero Section -->
+<section id="hero">
+    <div class="container">
+        <h1 class="text-gradient">Design.<br>Develop.<br>Ship.</h1>
+        <p class="subtitle">
+            I craft intuitive digital experiences with clean code and pixel-perfect design. 
+            Merging UI/UX principles with modern frontend engineering.
+        </p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#about" class="btn btn-secondary">About Me</a>
+        </div>
+    </div>
+</section>
 
-<!-- Projects -->
-	<section id="projects">
-		<div class="container">
-			<h2>Selected Work</h2>
-			
-			<div class="projects-grid">
-				<!-- Project 1 -->
-				<article class="project-card">
-					<a href="project-template.html">
-						<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop" alt="Fintech App Design" class="project-image">
-						<div class="project-content">
-							<div class="project-tags">
-								<span class="tag">UI Design</span>
-								<span class="tag">Mobile</span>
-							</div>
-							<h3 class="project-title">Fintech Dashboard</h3>
-							<p class="project-desc">A comprehensive mobile banking redesign focusing on accessibility and data visualization.</p>
-						</div>
-					</a>
-				</article>
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2 style="font-size: 2rem;">Selected Work</h2>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <a href="project-template.html" class="project-card">
+                <div class="project-image-container">
+                    <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=2670&auto=format&fit=crop" class="project-image" alt="Fintech App">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">UI Design</span>
+                        <span class="tag">Mobile</span>
+                    </div>
+                    <h3 class="project-title">Fintech Dashboard</h3>
+                    <p class="project-desc">A complete redesign of a banking application focusing on accessibility and data visualization.</p>
+                </div>
+            </a>
 
-				<!-- Project 2 -->
-				<article class="project-card">
-					<a href="project-template.html">
-						<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop" alt="SaaS Platform" class="project-image">
-						<div class="project-content">
-							<div class="project-tags">
-								<span class="tag">UX Research</span>
-								<span class="tag">Web App</span>
-							</div>
-							<h3 class="project-title">Analytics Platform</h3>
-							<p class="project-desc">Simplifying complex data workflows for enterprise users through user-centered design.</p>
-						</div>
-					</a>
-				</article>
+            <!-- Project 2 -->
+            <a href="project-template.html" class="project-card">
+                <div class="project-image-container">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop" class="project-image" alt="Analytics Platform">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">UX Research</span>
+                        <span class="tag">Web App</span>
+                    </div>
+                    <h3 class="project-title">Data Analytics Platform</h3>
+                    <p class="project-desc">Simplifying complex data workflows for enterprise users through intuitive interface design.</p>
+                </div>
+            </a>
 
-				<!-- Project 3 -->
-				<article class="project-card">
-					<a href="project-template.html">
-						<img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=2555&auto=format&fit=crop" alt="E-commerce Redesign" class="project-image">
-						<div class="project-content">
-							<div class="project-tags">
-								<span class="tag">Product Design</span>
-								<span class="tag">Strategy</span>
-							</div>
-							<h3 class="project-title">E-commerce Redesign</h3>
-							<p class="project-desc">Increasing conversion rates through a streamlined checkout experience.</p>
-						</div>
-					</a>
-				</article>
-			</div>
-		</div>
-	</section>
-
-<!-- About -->
-	<section id="about">
-		<div class="container">
-			<div class="about-content">
-				<h2>About Me</h2>
-				<p>I specialize in HTML, CSS, and JavaScript, with a strong background in Microsoft Azure. Currently, I'm pivoting my career to focus on the intersection of design and engineering.</p>
-				<p>My goal is to create products that not only look good but work seamlessly. I believe that good design is invisible and intuitive.</p>
-				<br>
-				<a href="about.html" style="color: var(--text-accent); font-weight: 600;">More about me &rarr;</a>
-			</div>
-		</div>
-	</section>
-
-<!-- Contact -->
-	<section id="contact">
-		<div class="container">
-			<h2>Let's work together</h2>
-			<p style="color: var(--text-muted); max-width: 500px; margin: 0 auto var(--spacing-md) auto;">I'm always interested in hearing about new opportunities, coding challenges, UX design sprints, and web 3.0.</p>
-			<a href="mailto:donglak.han@gmail.com" class="btn btn-primary">Get In Touch</a>
-		</div>
-	</section>
+            <!-- Project 3 -->
+            <a href="project-template.html" class="project-card">
+                <div class="project-image-container">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=2555&auto=format&fit=crop" class="project-image" alt="E-commerce">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Product Design</span>
+                        <span class="tag">Frontend</span>
+                    </div>
+                    <h3 class="project-title">E-commerce Experience</h3>
+                    <p class="project-desc">Increasing conversion rates through a streamlined checkout flow and modern aesthetic.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
 
 <!-- Footer -->
-	<footer>
-		<div class="container">
-			<ul>
-				<li>
-					<a href="https://www.linkedin.com/in/hiderek/" target="_blank" aria-label="LinkedIn">
-						<span class="fa-brands fa-linkedin" aria-hidden="true"></span>
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/Donglak-Derek" target="_blank" aria-label="GitHub">
-						<span class="fa-brands fa-square-github" aria-hidden="true"></span>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.behance.net/Derekhan" target="_blank" aria-label="Behance">
-						<span class="fa-brands fa-square-behance" aria-hidden="true"></span>
-					</a>
-				</li>
-				<li>
-					<a href="mailto:donglak.han@gmail.com" aria-label="Email">
-						<span class="fa-solid fa-envelope"></span>
-					</a>
-				</li>
-			</ul>
-			<p><small>&copy; 2024 Derek Han. Crafted with code.</small></p>
-		</div>
-	</footer>
+<footer>
+    <div class="container">
+        <ul class="social-links">
+            <li><a href="https://github.com/Donglak-Derek" aria-label="Github"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/in/hiderek/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="mailto:donglak.han@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <p style="font-family: var(--font-mono); font-size: 0.85rem; color: #444;">
+            &copy; 2024 Derek Han. Built with HTML, CSS & Design Love.
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>

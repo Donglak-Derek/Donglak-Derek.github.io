@@ -1,124 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>About Me - Derek Han</title>
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
-	<!-- Icons -->
-	<script src="https://kit.fontawesome.com/fa893ef33e.js" crossorigin="anonymous"></script>
-	<!-- Styles -->
-	<link rel="stylesheet" href="css/style.css">
-    <style>
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: var(--spacing-lg);
-            margin-top: var(--spacing-md);
-        }
-        .profile-img {
-            width: 100%;
-            border-radius: var(--radius-md);
-            aspect-ratio: 1/1;
-            object-fit: cover;
-            background-color: var(--bg-card);
-        }
-        .bio-text p {
-            margin-bottom: var(--spacing-sm);
-            color: var(--text-muted);
-        }
-        .skills-list {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: var(--spacing-sm);
-        }
-        @media (max-width: 768px) {
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Derek Han</title>
+    <script src="https://kit.fontawesome.com/fa893ef33e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Navbar -->
-	<nav>
-		<div class="container">
-			<ul>
-				<li>
-					<a href="./index.html" class="logo">
-						<span class="fa-regular fa-face-smile-beam" aria-hidden="true"></span>
-						<span>Derek Han</span>
-					</a>
-				</li>
-				<li class="nav-links">
-					<a href="./index.html#projects">Work</a>
-					<a href="./about.html" style="color: var(--text-main);">About</a>
-					<a href="./index.html#contact">Contact</a>
-					<a href="#" target="_blank" class="btn btn-primary">Resume</a>
-				</li>
-				<li class="hamburger">
-					<span class="fas fa-bars"></span>
-				</li>
-			</ul>
-		</div>
-	</nav>
+<!-- Navigation -->
+<nav>
+    <div class="container">
+        <a href="/" class="logo">Derek Han</a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="#about" style="color: #fff;">About</a>
+            <a href="mailto:donglak.han@gmail.com">Contact</a>
+        </div>
+    </div>
+</nav>
 
 <!-- Main Content -->
-	<section style="padding: var(--spacing-xl) 0;">
-		<div class="container">
-			<h1>About Me</h1>
-			<p class="subtitle">Designer. Developer. Problem Solver.</p>
-
-            <div class="about-grid">
-                <!-- Sidebar / Photo -->
-                <div>
-                     <!-- Placeholder profile image -->
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop" alt="Derek Han" class="profile-img">
-                    
-                    <div style="margin-top: var(--spacing-md);">
-                        <h4>Connect</h4>
-                        <ul style="list-style: none; padding: 0; display: flex; gap: 1rem; font-size: 1.5rem;">
-                            <li><a href="https://www.linkedin.com/in/hiderek/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="https://github.com/Donglak-Derek" target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
-                            <li><a href="mailto:donglak.han@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                        </ul>
+<section style="padding-top: 120px;">
+    <div class="container">
+        <h1 style="font-size: 3rem; margin-bottom: 24px;">About Me</h1>
+        
+        <div class="about-grid">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop" alt="Derek Han" class="profile-img">
+                
+                <div style="margin-top: 2rem;">
+                    <h4 style="font-size: 0.9rem; text-transform: uppercase; color: #444; margin-bottom: 1rem;">Socials</h4>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="https://github.com/Donglak-Derek" class="btn btn-secondary" style="width: 40px; height: 40px; padding: 0;"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/hiderek/" class="btn btn-secondary" style="width: 40px; height: 40px; padding: 0;"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Bio -->
-                <div class="bio-text">
-                    <h3>Hello! I'm Derek.</h3>
-                    <p>I am a UI/UX Designer and Front-end Developer specialized in creating intuitive digital experiences. Currently, I'm pivoting from a background in Microsoft Azure engineering to focus entirely on user-centered design and interface development.</p>
-                    <p>My journey in tech began with cloud infrastructure, but I quickly realized my passion lay in the visual and interactive aspects of technology. I love creating digital experiences that are not only functional but also beautiful and intuitive.</p>
-                    <p>When I'm not coding or designing, I'm exploring new web technologies, participating in coding challenges, or sketching out new interface ideas.</p>
+            <!-- Bio -->
+            <div class="bio">
+                <h3 style="margin-bottom: 1.5rem;">The Intersection of<br>Logic & Creativity.</h3>
+                
+                <p style="margin-bottom: 1.5rem;">
+                    I am a <strong>UI/UX Designer</strong> and <strong>Front-end Developer</strong> specialized in creating intuitive digital experiences. Currently, I'm pivoting from a background in Microsoft Azure engineering to focus entirely on user-centered design and interface development.
+                </p>
+                
+                <p style="margin-bottom: 1.5rem;">
+                    My journey in tech began with cloud infrastructure, where I learned the importance of scalability and performance. However, I quickly realized my passion lay in the visual and interactive layers of technology—the parts that people actually touch and feel.
+                </p>
 
-                    <h3 style="margin-top: var(--spacing-md);">Skills</h3>
-                    <div class="skills-list">
+                <p style="margin-bottom: 3rem;">
+                    I believe that good design is invisible. It should solve problems without creating new ones. When I'm not pushing pixels in Figma or writing clean CSS, I'm exploring new web technologies and adhering to the "Ship fast, learn fast" philosophy.
+                </p>
+
+                <div style="border-top: 1px solid #333; padding-top: 2rem;">
+                    <h4 style="margin-bottom: 1rem;">Technical Stack</h4>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
                         <span class="tag">JavaScript</span>
-                        <span class="tag">UI/UX Design</span>
+                        <span class="tag">React</span>
                         <span class="tag">Figma</span>
                         <span class="tag">Git</span>
                         <span class="tag">Microsoft Azure</span>
                     </div>
                 </div>
             </div>
-		</div>
-	</section>
+        </div>
+    </div>
+</section>
 
 <!-- Footer -->
-	<footer>
-		<div class="container">
-			<p><small>&copy; 2024 Derek Han. Crafted with code.</small></p>
-		</div>
-	</footer>
+<footer>
+    <div class="container">
+        <p style="font-family: var(--font-mono); font-size: 0.85rem; color: #444;">
+            &copy; 2024 Derek Han.
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>
