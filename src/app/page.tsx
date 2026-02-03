@@ -9,7 +9,7 @@ export default function Home() {
       <main className="flex-1 flex flex-col pt-24 pb-12 overflow-x-hidden">
         {/* Hero */}
         <section className="text-center space-y-8 max-w-4xl mx-auto px-4 py-20 relative">
-          <div className="absolute top-1/2 left-1/2 w-[800px] h-[800px] bg-white blur-[120px] rounded-full pointer-events-none animate-glow" />
+          <div className="fixed inset-0 z-[-1] pointer-events-none bg-grid-purple animate-glow" />
           
           <h1 className="text-5xl md:text-8xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white to-[#666]">
             Design.<br/>Develop.<br/>Ship.

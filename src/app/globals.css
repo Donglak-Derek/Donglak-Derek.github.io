@@ -36,12 +36,29 @@ body {
   mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
 }
 
-/* Hero Glow Animation */
 @keyframes glow {
-  0%, 100% { opacity: 0.03; transform: translate(-50%, -50%) scale(1); }
-  50% { opacity: 0.06; transform: translate(-50%, -50%) scale(1.1); }
+  0% { opacity: 0.2; }
+  15% { opacity: 0.4; }
+  30% { opacity: 0.2; }
+  45% { opacity: 0.8; }
+  60% { opacity: 0.2; }
+  100% { opacity: 0.2; }
 }
 
 .animate-glow {
-  animation: glow 8s ease-in-out infinite;
+  animation: glow 4s ease-in-out infinite;
+}
+
+.mask-grid-lines {
+  /* Deprecated: Logic moved to bg-grid-red */
+}
+
+/* Purple Grid Overlay */
+.bg-grid-purple {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, #a855f7 1px, transparent 1px),
+    linear-gradient(to bottom, #a855f7 1px, transparent 1px);
+  -webkit-mask-image: radial-gradient(circle at 50% 35%, black 0%, transparent 400px);
+  mask-image: radial-gradient(circle at 50% 35%, black 0%, transparent 400px);
 }
