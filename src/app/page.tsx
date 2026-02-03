@@ -44,26 +44,28 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Project Card 1 */}
-            <div className="group border border-[#222] bg-[#0a0a0a] rounded-xl overflow-hidden hover:border-[#444] transition-all duration-300 hover:-translate-y-1">
+            {/* Project Card: Jok-Eng */}
+            <a href="https://jok-eng.com" target="_blank" rel="noopener noreferrer" className="group border border-[#222] bg-[#0a0a0a] rounded-xl overflow-hidden hover:border-[#444] transition-all duration-300 hover:-translate-y-1 block">
               <div className="h-48 bg-[#111] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-blue-500/20 group-hover:opacity-100 opacity-50 transition-opacity" />
-                {/* Image Placeholder */}
-                <div className="w-full h-full flex items-center justify-center text-[#333] font-mono text-xs">
-                    PROJECT IMAGE
+                <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 group-hover:opacity-100 opacity-50 transition-opacity" />
+                <div className="w-full h-full flex items-center justify-center text-[#333] font-mono text-xs tracking-widest">
+                    JOK-ENG.COM
                 </div>
               </div>
               <div className="p-6">
                 <div className="flex gap-2 mb-4">
-                    <span className="text-[10px] font-mono border border-[#333] px-2 py-1 rounded text-[#888]">UI DESIGN</span>
-                    <span className="text-[10px] font-mono border border-[#333] px-2 py-1 rounded text-[#888]">MOBILE</span>
+                    <span className="text-[10px] font-mono border border-[#333] px-2 py-1 rounded text-[#888]">AI PLATFORM</span>
+                    <span className="text-[10px] font-mono border border-[#333] px-2 py-1 rounded text-[#888]">EDUCATION</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2">Fintech Dashboard</h3>
+                <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                    Jok-Eng 
+                    <ArrowUpRight size={16} className="text-[#444] group-hover:text-white transition-colors" />
+                </h3>
                 <p className="text-[#666] text-sm leading-relaxed">
-                  A complete redesign of a banking application focusing on accessibility and data visualization.
+                  The Storyteller's Toolkit. An AI-powered platform helping users master natural English through context-aware scenarios and anecdotes.
                 </p>
               </div>
-            </div>
+            </a>
 
             {/* Project Card 2 */}
              <div className="group border border-[#222] bg-[#0a0a0a] rounded-xl overflow-hidden hover:border-[#444] transition-all duration-300 hover:-translate-y-1">
