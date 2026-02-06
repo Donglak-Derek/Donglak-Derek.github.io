@@ -33,18 +33,33 @@ export default function About() {
 
           {/* Content */}
           <div className="space-y-8">
-            <h1 className="text-3xl md:text-5xl font-bold tracking-tight">The Intersection of<br/>Logic & Creativity</h1>
+            <h1 className="text-3xl md:text-5xl font-bold tracking-tight">Building Logic,<br/>Designing for Humans</h1>
             
-            <div className="space-y-6 text-[#999] leading-relaxed">
-              <p>
-                I am a <strong className="text-white">UI/UX Designer</strong> and <strong className="text-white">Front-end Developer</strong> specialized in creating intuitive digital experiences. Currently, I'm pivoting from a background in Microsoft Azure engineering to focus entirely on user-centered design and interface development.
+            <div className="space-y-8 text-[#999] leading-relaxed">
+              <p className="text-lg md:text-xl text-white font-medium">
+                I build products by listening to users and solving their technical frustrations. From Microsoft Azure support to Product Recovery at IKEA, I have spent my career fixing things for people—now, I design them so they don't break.
               </p>
-              <p>
-                My journey in tech began with cloud infrastructure, where I learned the importance of scalability and performance. However, I quickly realized my passion lay in the visual and interactive layers of technology, the parts that people actually touch and feel.
-              </p>
-              <p>
-                I believe that good design is invisible. It should solve problems without creating new ones. When I'm not pushing pixels in Figma or writing clean CSS, I'm exploring new web technologies and adhering to the "Ship fast, learn fast" philosophy.
-              </p>
+
+              <div className="space-y-2">
+                <h3 className="text-white font-bold">The Engineer&apos;s Brain</h3>
+                <p>
+                  I understand how the cloud works (Azure) and how systems are built. This technical foundation ensures that every pixel I push is backed by a feasible, scalable architecture. I don&apos;t just design screens; I design systems.
+                </p>
+              </div>
+
+              <div className="space-y-2">
+                <h3 className="text-white font-bold">The Designer&apos;s Eye</h3>
+                <p>
+                  I use that technical backbone to build designs that actually work in the real world. My goal is simple: Create interfaces that feel invisible, solving user problems without creating new technical debt.
+                </p>
+              </div>
+
+              <div className="space-y-2">
+                <h3 className="text-white font-bold">The Human Connection</h3>
+                <p>
+                  Living in a diverse community in Texas, I saw a real problem with English learning. That&apos;s why I built <strong className="text-white">Jok-Eng</strong>—not just as a coding project, but to solve a real human struggle I observed in my daily life.
+                </p>
+              </div>
             </div>
 
             <div className="pt-8 border-t border-[#222]">

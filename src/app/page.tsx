@@ -33,6 +33,13 @@ export default function Home() {
             >
               About Me
             </Link>
+            <a 
+              href="/resume.pdf" 
+              target="_blank"
+              className="px-6 py-3 border border-[#333] text-[#888] font-semibold rounded hover:text-white hover:border-white transition-all"
+            >
+              Download Resume
+            </a>
           </div>
         </section>
 
@@ -65,7 +72,7 @@ export default function Home() {
                         </div>
                         <div>
                             <h3 className="text-xs font-mono text-[#666] uppercase mb-2">Timeline</h3>
-                            <p className="font-medium">2024 - Present</p>
+                            <p className="font-medium">2026 - Present</p>
                         </div>
                         <div>
                             <h3 className="text-xs font-mono text-[#666] uppercase mb-2">Stack</h3>
@@ -104,6 +111,26 @@ export default function Home() {
                             Jok-Eng uses AI to generate context-aware scripts for real life. From "The 'Small Talk' Shield" to "Turning Awkward into Gold," the platform provides learners with the <strong>narrative tools</strong> they need to survive and thrive in social situations.
                         </p>
                     </div>
+                </div>
+
+                {/* Design Process (Wireframes & Iterations) */}
+                <div className="mb-32">
+                  <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
+                      <span className="w-8 h-8 rounded-full bg-[#222] flex items-center justify-center text-sm font-mono text-[#fff]">03</span>
+                      Design Process
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      {/* Wireframes Placeholder */}
+                      <div className="bg-[#111] border border-[#222] rounded-xl p-8 aspect-video flex flex-col items-center justify-center text-center space-y-4">
+                          <span className="text-[#444] font-mono text-sm">[ WIREFRAMES IMAGE ]</span>
+                          <p className="text-[#666] text-sm max-w-xs">Initial sketches focusing on "Choice Architecture" to reduce cognitive load.</p>
+                      </div>
+                      {/* Before/After Placeholder */}
+                      <div className="bg-[#111] border border-[#222] rounded-xl p-8 aspect-video flex flex-col items-center justify-center text-center space-y-4">
+                          <span className="text-[#444] font-mono text-sm">[ BEFORE / AFTER IMAGE ]</span>
+                          <p className="text-[#666] text-sm max-w-xs">Iterating on the "Scenario Card" layout based on user feedback.</p>
+                      </div>
+                  </div>
                 </div>
 
                 {/* Pillar 1: The Product UI */}
@@ -171,7 +198,7 @@ export default function Home() {
                         </div>
                         <div className="flex gap-4">
                             <CheckCircle2 className="text-green-500 shrink-0" />
-                            <p className="text-[#888]">Established a scalable design system for both the web application and marketing materials.</p>
+                            <p className="text-[#888]">Created a set of reusable design components to keep the app and social media looking consistent.</p>
                         </div>
                         <div className="flex gap-4">
                             <CheckCircle2 className="text-green-500 shrink-0" />
@@ -179,8 +206,61 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+
+                {/* What's Next */}
+                <div className="mt-16 pt-8 border-t border-[#222]">
+                    <h4 className="text-lg font-bold mb-4 text-white">What&apos;s Next?</h4>
+                    <p className="text-[#888] leading-relaxed">
+                        I am currently conducting user interviews with non-native speakers to refine the scenario-generation flow. My goal is to further reduce cognitive load and introduce "Community Remixing" features to spur organic growth.
+                    </p>
+                </div>
+
             </section>
         </div>
+
+        {/* Other Design Explorations */}
+        <section className="max-w-6xl mx-auto px-6 pb-32">
+            <h2 className="text-3xl font-bold mb-2">Other Design Explorations</h2>
+            <p className="text-[#888] mb-12 max-w-2xl">A collection of projects where I explore new platforms, branding, and user problems.</p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {/* Project 1: Instagram Vision Pro */}
+                <div className="group cursor-pointer">
+                    <div className="aspect-[4/3] bg-[#111] border border-[#222] rounded-xl mb-4 overflow-hidden relative">
+                         <div className="absolute inset-0 flex items-center justify-center text-[#333] font-mono text-xs">
+                            [ VISION PRO UI ]
+                         </div>
+                    </div>
+                    <h3 className="font-bold text-lg mb-1 group-hover:text-purple-400 transition-colors">Instagram for Vision Pro</h3>
+                    <p className="text-sm text-[#666] mb-2">Spatial Design • Concept</p>
+                    <p className="text-sm text-[#888]">Redesigning a familiar social interface for an immersive 3D environment.</p>
+                </div>
+
+                {/* Project 2: Pattern App */}
+                <div className="group cursor-pointer">
+                    <div className="aspect-[4/3] bg-[#111] border border-[#222] rounded-xl mb-4 overflow-hidden relative">
+                         <div className="absolute inset-0 flex items-center justify-center text-[#333] font-mono text-xs">
+                            [ MOBILE APP UI ]
+                         </div>
+                    </div>
+                    <h3 className="font-bold text-lg mb-1 group-hover:text-blue-400 transition-colors">Pattern</h3>
+                    <p className="text-sm text-[#666] mb-2">Mobile App • UI/UX</p>
+                    <p className="text-sm text-[#888]">A clean, minimal mobile interface focused on rhythm and consistency.</p>
+                </div>
+
+                {/* Project 3: ISOM */}
+                <div className="group cursor-pointer">
+                    <div className="aspect-[4/3] bg-[#111] border border-[#222] rounded-xl mb-4 overflow-hidden relative">
+                         <div className="absolute inset-0 flex items-center justify-center text-[#333] font-mono text-xs">
+                            [ WEBSITE MOCKUP ]
+                         </div>
+                    </div>
+                    <h3 className="font-bold text-lg mb-1 group-hover:text-green-400 transition-colors">ISOM School of Music</h3>
+                    <p className="text-sm text-[#666] mb-2">Web Design • Client Work</p>
+                    <p className="text-sm text-[#888]">Translating a physical business&apos;s vibe into a functional digital booking site.</p>
+                </div>
+            </div>
+        </section>
       </main>
       
       {/* Footer */}
