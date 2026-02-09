@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
@@ -11,11 +12,13 @@ export default function About() {
           {/* Sidebar */}
           <div className="space-y-6">
             <div className="aspect-square bg-[#111] rounded-full overflow-hidden border border-[#333] relative">
-               {/* Placeholder for Profile Image */}
-               <div className="absolute inset-0 flex items-center justify-center text-[#444] text-xs font-mono">
-                 [PROFILE PHOTO]
-               </div>
-               {/* <img src="/profile.jpg" alt="Derek Han" className="w-full h-full object-cover" /> */}
+               <Image 
+                 src="/profile/profile.png" 
+                 alt="Derek Han" 
+                 fill 
+                 className="object-cover"
+                 priority
+               />
             </div>
             
             <div className="flex gap-4 justify-center">
