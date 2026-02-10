@@ -27,7 +27,7 @@ const projects = [
     year: '2024',
     description: 'Immersive audio-visual journey for an independent music label.',
     image: '/work/explorations/isom.jpg', 
-    link: '#',
+    link: '/work/isom',
     liveUrl: 'https://isom.co' // Placeholder
   },
   {
@@ -36,8 +36,8 @@ const projects = [
     category: 'Mobile UI/UX',
     year: '2025',
     description: 'Interface design exploration for a modern pattern recognition tool.',
-    image: '/work/explorations/pattern.png',
-    link: '#',
+    image: '/pattern/Pattern-1.png', 
+    link: '/work/pattern',
     // No live URL for this one typically, unless specified
   }
 ];
